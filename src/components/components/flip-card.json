@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_components_flip_cards",
+  "info": {
+    "displayName": "flipCard"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Detail": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

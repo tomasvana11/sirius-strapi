@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "career_banners",
+  "info": {
+    "singularName": "career-banner",
+    "pluralName": "career-banners",
+    "displayName": "Banner - kariéra"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "text"
+    },
+    "bannerLink": {
+      "type": "component",
+      "component": "components.button",
+      "repeatable": true
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "projekties",
+  "info": {
+    "singularName": "projekty",
+    "pluralName": "projekties",
+    "displayName": "Stránka - Projekty"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "HeroBanner": {
+      "type": "component",
+      "component": "components.hero-banner",
+      "repeatable": false
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "text_references",
+  "info": {
+    "singularName": "text-reference",
+    "pluralName": "text-references",
+    "displayName": "Textové reference"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Review": {
+      "type": "blocks",
+      "required": true
+    },
+    "Name": {
+      "type": "string"
+    },
+    "yearsBeingClient": {
+      "type": "integer"
+    }
+  }
+}

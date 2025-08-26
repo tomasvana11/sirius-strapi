@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_components_claim_sections",
+  "info": {
+    "displayName": "claimSection"
+  },
+  "options": {},
+  "attributes": {
+    "Claim": {
+      "type": "text"
+    },
+    "Mission": {
+      "type": "component",
+      "component": "components.card-with-icon",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

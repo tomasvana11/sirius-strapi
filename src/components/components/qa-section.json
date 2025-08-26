@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_components_qa_sections",
+  "info": {
+    "displayName": "qaSection"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Question": {
+      "type": "component",
+      "component": "components.question",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

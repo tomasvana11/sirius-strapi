@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_components_icon_cards",
+  "info": {
+    "displayName": "iconCard"
+  },
+  "options": {},
+  "attributes": {
+    "Icons": {
+      "type": "component",
+      "component": "components.icons",
+      "repeatable": false
+    },
+    "Title": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

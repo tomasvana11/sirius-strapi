@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "abouts",
+  "info": {
+    "singularName": "about",
+    "pluralName": "abouts",
+    "displayName": "Stránka - O nás"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "HeroBanner": {
+      "type": "component",
+      "component": "components.hero-banner",
+      "repeatable": true
+    },
+    "valuesSection": {
+      "type": "component",
+      "component": "components.values-section",
+      "repeatable": false
+    },
+    "videoSection": {
+      "type": "component",
+      "component": "components.video-section",
+      "repeatable": false
+    }
+  }
+}

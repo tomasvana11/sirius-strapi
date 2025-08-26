@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "whistleblowings",
+  "info": {
+    "singularName": "whistleblowing",
+    "pluralName": "whistleblowings",
+    "displayName": "Whistleblowing"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "whistleblowingContent": {
+      "type": "component",
+      "component": "components.text-page",
+      "repeatable": false
+    }
+  }
+}

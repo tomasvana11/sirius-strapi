@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_components_text_pages",
+  "info": {
+    "displayName": "textPage"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Content": {
+      "type": "blocks",
+      "required": true
+    }
+  },
+  "config": {}
+}

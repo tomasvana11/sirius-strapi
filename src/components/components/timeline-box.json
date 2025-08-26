@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_components_timeline_boxes",
+  "info": {
+    "displayName": "timelineBox"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "TimelineItem": {
+      "type": "component",
+      "component": "components.timeline-item",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

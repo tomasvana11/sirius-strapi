@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_components_numbers_sections",
+  "info": {
+    "displayName": "numbersSection"
+  },
+  "options": {},
+  "attributes": {
+    "Number": {
+      "type": "component",
+      "component": "components.number",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

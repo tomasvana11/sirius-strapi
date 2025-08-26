@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_components_checks",
+  "info": {
+    "displayName": "Checks"
+  },
+  "options": {},
+  "attributes": {
+    "checkItem": {
+      "type": "component",
+      "component": "components.checks-item",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

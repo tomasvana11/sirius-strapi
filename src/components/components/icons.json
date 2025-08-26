@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_components_icons",
+  "info": {
+    "displayName": "icons"
+  },
+  "options": {},
+  "attributes": {
+    "Icon": {
+      "type": "enumeration",
+      "enum": [
+        "rocket",
+        "arrow",
+        "shield "
+      ]
+    }
+  },
+  "config": {}
+}

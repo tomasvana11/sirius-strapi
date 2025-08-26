@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_components_numbers",
+  "info": {
+    "displayName": "Number"
+  },
+  "options": {},
+  "attributes": {
+    "Number": {
+      "type": "blocks"
+    },
+    "Description": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

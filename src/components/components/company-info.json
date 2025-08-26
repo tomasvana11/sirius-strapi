@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_components_company_infos",
+  "info": {
+    "displayName": "companyInfo"
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "companyId": {
+      "type": "string"
+    },
+    "companyVat": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

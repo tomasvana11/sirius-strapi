@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_components_cards_with_video_sections",
+  "info": {
+    "displayName": "cardsWithVideoSection"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "cardsAdvantages": {
+      "type": "component",
+      "component": "components.cards-list",
+      "repeatable": false
+    },
+    "Video": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "videos"
+      ]
+    }
+  },
+  "config": {}
+}

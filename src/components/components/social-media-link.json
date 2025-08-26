@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_components_social_media_links",
+  "info": {
+    "displayName": "Social Media Link"
+  },
+  "options": {},
+  "attributes": {
+    "Platform": {
+      "type": "enumeration",
+      "required": true,
+      "enum": [
+        "facebook",
+        "instagram",
+        "linkedin",
+        "youtube",
+        "other"
+      ]
+    },
+    "Url": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "config": {}
+}

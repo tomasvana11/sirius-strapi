@@ -1,0 +1,45 @@
+{
+  "kind": "singleType",
+  "collectionName": "careers",
+  "info": {
+    "singularName": "career",
+    "pluralName": "careers",
+    "displayName": "Stránka - Kariéra"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "HeroBanner": {
+      "type": "component",
+      "component": "components.hero-banner",
+      "repeatable": false
+    },
+    "ValuesSection": {
+      "type": "component",
+      "component": "components.values-section",
+      "repeatable": false
+    },
+    "careerAdvantages": {
+      "type": "component",
+      "component": "components.cards-with-video-section",
+      "repeatable": false
+    },
+    "questionsSection": {
+      "type": "component",
+      "component": "components.qa-section",
+      "repeatable": false
+    },
+    "DayInSirius": {
+      "type": "component",
+      "component": "components.video-section",
+      "repeatable": false
+    },
+    "careerTimeline": {
+      "type": "component",
+      "component": "components.timeline-box",
+      "repeatable": false
+    }
+  }
+}

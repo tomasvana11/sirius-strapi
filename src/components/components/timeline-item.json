@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_components_timeline_items",
+  "info": {
+    "displayName": "timelineItem"
+  },
+  "options": {},
+  "attributes": {
+    "Icons": {
+      "type": "component",
+      "component": "components.icons",
+      "repeatable": false
+    },
+    "Label": {
+      "type": "string"
+    },
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_components_checks_items",
+  "info": {
+    "displayName": "checksItem"
+  },
+  "options": {},
+  "attributes": {
+    "Content": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

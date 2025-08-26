@@ -1,0 +1,23 @@
+{
+  "kind": "singleType",
+  "collectionName": "top_bars",
+  "info": {
+    "singularName": "top-bar",
+    "pluralName": "top-bars",
+    "displayName": "Top Bar"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Message": {
+      "type": "blocks"
+    },
+    "Links": {
+      "type": "component",
+      "component": "components.link-with-icon",
+      "repeatable": true
+    }
+  }
+}

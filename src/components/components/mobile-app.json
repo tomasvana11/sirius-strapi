@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_components_mobile_apps",
+  "info": {
+    "displayName": "mobileApp"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "blocks"
+    }
+  },
+  "config": {}
+}

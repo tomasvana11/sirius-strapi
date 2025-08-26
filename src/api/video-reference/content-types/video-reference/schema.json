@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "video_references",
+  "info": {
+    "singularName": "video-reference",
+    "pluralName": "video-references",
+    "displayName": "Video reference"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Video": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "videos"
+      ]
+    },
+    "Name": {
+      "type": "string"
+    },
+    "yearsBeingClient": {
+      "type": "integer"
+    }
+  }
+}

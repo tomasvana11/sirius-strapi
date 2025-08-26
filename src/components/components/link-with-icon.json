@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_components_link_with_icons",
+  "info": {
+    "displayName": "Link With Icon"
+  },
+  "options": {},
+  "attributes": {
+    "Label": {
+      "type": "string"
+    },
+    "Url": {
+      "type": "string"
+    },
+    "Icon": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "arrow",
+        "info"
+      ]
+    }
+  },
+  "config": {}
+}

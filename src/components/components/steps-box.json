@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_components_steps_boxes",
+  "info": {
+    "displayName": "stepsBox"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Step": {
+      "type": "component",
+      "component": "components.step",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

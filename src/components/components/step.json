@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_components_steps",
+  "info": {
+    "displayName": "step"
+  },
+  "options": {},
+  "attributes": {
+    "Icon": {
+      "type": "component",
+      "component": "components.icons",
+      "repeatable": false
+    },
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

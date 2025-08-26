@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_components_services_sesctions",
+  "info": {
+    "displayName": "servicesSesction"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Service": {
+      "type": "component",
+      "component": "components.icon-card",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

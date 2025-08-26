@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_components_hero_banners",
+  "info": {
+    "displayName": "heroBanner"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "type": "text"
+    },
+    "heroBannerButton": {
+      "type": "component",
+      "component": "components.button",
+      "repeatable": false
+    }
+  },
+  "config": {}
+}

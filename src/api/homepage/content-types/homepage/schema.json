@@ -1,0 +1,50 @@
+{
+  "kind": "singleType",
+  "collectionName": "homepages",
+  "info": {
+    "singularName": "homepage",
+    "pluralName": "homepages",
+    "displayName": "Stránka - Homepage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "HeroBanner": {
+      "type": "component",
+      "component": "components.hero-banner",
+      "repeatable": false
+    },
+    "Numbers": {
+      "type": "component",
+      "component": "components.numbers-section",
+      "repeatable": false
+    },
+    "appAdvantages": {
+      "type": "component",
+      "component": "components.app-advantages",
+      "repeatable": false
+    },
+    "MissionClaim": {
+      "type": "component",
+      "component": "components.claim-section",
+      "repeatable": false
+    },
+    "Facts": {
+      "type": "component",
+      "component": "components.facts-section",
+      "repeatable": false
+    },
+    "Steps": {
+      "type": "component",
+      "component": "components.steps-box",
+      "repeatable": false
+    },
+    "Checks": {
+      "type": "component",
+      "component": "components.checks",
+      "repeatable": false
+    }
+  }
+}

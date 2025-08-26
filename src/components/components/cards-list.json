@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_components_cards_lists",
+  "info": {
+    "displayName": "cardsList"
+  },
+  "options": {},
+  "attributes": {
+    "Advantage": {
+      "type": "component",
+      "component": "components.card-with-icon",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

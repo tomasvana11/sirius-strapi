@@ -22,7 +22,7 @@ export default ({ env }) => ({
 */
 
 export default ({ env }) => ({
-  url: env("ADMIN_PATH", "/strapi/admin"),
+  url: "/admin",
   serveAdminPanel: true,
   auth: {
     secret: env("ADMIN_JWT_SECRET"),

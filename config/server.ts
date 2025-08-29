@@ -27,8 +27,5 @@ export default ({ env }) => ({
   app: {
     keys: env.array("APP_KEYS"),
   },
-  url: env("PUBLIC_URL", "http://localhost:1337/strapi"),
-  admin: {
-    url: env("ADMIN_PATH", "/strapi/admin"),
-  },
+  url: env("PUBLIC_URL", "http://localhost:1337/strapi"), // 👈 základní prefix
 });

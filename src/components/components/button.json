@@ -5,8 +5,13 @@
   },
   "options": {},
   "attributes": {
+    "displayText": {
+      "type": "string",
+      "required": true
+    },
     "Url": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "isExternal": {
       "type": "boolean"

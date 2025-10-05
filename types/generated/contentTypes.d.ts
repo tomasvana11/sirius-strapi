@@ -799,6 +799,37 @@ export interface ApiPartnerPartner extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiPoptavkyZFormularePoptavkyZFormulare
+  extends Struct.CollectionTypeSchema {
+  collectionName: 'poptavky_z_formulares';
+  info: {
+    displayName: 'Popt\u00E1vky z formul\u00E1\u0159e';
+    pluralName: 'poptavky-z-formulares';
+    singularName: 'poptavky-z-formulare';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    Email: Schema.Attribute.Email & Schema.Attribute.Required;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::poptavky-z-formulare.poptavky-z-formulare'
+    > &
+      Schema.Attribute.Private;
+    Name: Schema.Attribute.String & Schema.Attribute.Required;
+    Phone: Schema.Attribute.String & Schema.Attribute.Required;
+    publishedAt: Schema.Attribute.DateTime;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiProjectProject extends Struct.CollectionTypeSchema {
   collectionName: 'projects';
   info: {
@@ -1599,6 +1630,7 @@ declare module '@strapi/strapi' {
       'api::homepage.homepage': ApiHomepageHomepage;
       'api::kontakty.kontakty': ApiKontaktyKontakty;
       'api::partner.partner': ApiPartnerPartner;
+      'api::poptavky-z-formulare.poptavky-z-formulare': ApiPoptavkyZFormularePoptavkyZFormulare;
       'api::project.project': ApiProjectProject;
       'api::projekty.projekty': ApiProjektyProjekty;
       'api::reference.reference': ApiReferenceReference;

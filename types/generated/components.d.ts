@@ -17,8 +17,9 @@ export interface ComponentsButton extends Struct.ComponentSchema {
     displayName: 'Button';
   };
   attributes: {
+    displayText: Schema.Attribute.String & Schema.Attribute.Required;
     isExternal: Schema.Attribute.Boolean;
-    Url: Schema.Attribute.String;
+    Url: Schema.Attribute.String & Schema.Attribute.Required;
   };
 }
 

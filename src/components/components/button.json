@@ -9,13 +9,46 @@
       "type": "string",
       "required": true
     },
-    "Url": {
-      "type": "string",
-      "required": true
-    },
     "isExternal": {
       "type": "boolean",
       "required": true
+    },
+    "Url": {
+      "type": "string",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "isExternal"
+            },
+            true
+          ]
+        }
+      },
+      "required": true
+    },
+    "Page": {
+      "type": "enumeration",
+      "conditions": {
+        "visible": {
+          "==": [
+            {
+              "var": "isExternal"
+            },
+            false
+          ]
+        }
+      },
+      "required": true,
+      "enum": [
+        "Homepage",
+        "Projekty",
+        "Reference",
+        "Spolupráce",
+        "Kariéra",
+        "Kontakty",
+        "Blog"
+      ]
     }
   },
   "config": {}

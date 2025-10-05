@@ -19,6 +19,18 @@ export interface ComponentsButton extends Struct.ComponentSchema {
   attributes: {
     displayText: Schema.Attribute.String & Schema.Attribute.Required;
     isExternal: Schema.Attribute.Boolean & Schema.Attribute.Required;
+    Page: Schema.Attribute.Enumeration<
+      [
+        'Homepage',
+        'Projekty',
+        'Reference',
+        'Spolupr\u00E1ce',
+        'Kari\u00E9ra',
+        'Kontakty',
+        'Blog',
+      ]
+    > &
+      Schema.Attribute.Required;
     Url: Schema.Attribute.String & Schema.Attribute.Required;
   };
 }

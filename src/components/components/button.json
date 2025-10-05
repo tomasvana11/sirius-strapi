@@ -7,11 +7,11 @@
   "attributes": {
     "displayText": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "Url": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "isExternal": {
       "type": "boolean"

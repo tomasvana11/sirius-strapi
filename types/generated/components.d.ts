@@ -141,7 +141,6 @@ export interface ComponentsHeroBanner extends Struct.ComponentSchema {
   attributes: {
     Description: Schema.Attribute.Text;
     heroBannerButton: Schema.Attribute.Component<'components.button', false>;
-    HeroImage: Schema.Attribute.Media<'images'> & Schema.Attribute.Required;
     Title: Schema.Attribute.String & Schema.Attribute.Required;
   };
 }

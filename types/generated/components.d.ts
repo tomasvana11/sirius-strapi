@@ -17,9 +17,9 @@ export interface ComponentsButton extends Struct.ComponentSchema {
     displayName: 'Button';
   };
   attributes: {
-    displayText: Schema.Attribute.String;
-    isExternal: Schema.Attribute.Boolean;
-    Url: Schema.Attribute.String;
+    displayText: Schema.Attribute.String & Schema.Attribute.Required;
+    isExternal: Schema.Attribute.Boolean & Schema.Attribute.Required;
+    Url: Schema.Attribute.String & Schema.Attribute.Required;
   };
 }
 
@@ -129,6 +129,7 @@ export interface ComponentsHeroBanner extends Struct.ComponentSchema {
   attributes: {
     Description: Schema.Attribute.Text;
     heroBannerButton: Schema.Attribute.Component<'components.button', false>;
+    HeroImage: Schema.Attribute.Media<'images'> & Schema.Attribute.Required;
     Title: Schema.Attribute.String & Schema.Attribute.Required;
   };
 }

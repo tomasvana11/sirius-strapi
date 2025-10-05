@@ -7,14 +7,15 @@
   "attributes": {
     "displayText": {
       "type": "string",
-      "required": false
+      "required": true
     },
     "Url": {
       "type": "string",
-      "required": false
+      "required": true
     },
     "isExternal": {
-      "type": "boolean"
+      "type": "boolean",
+      "required": true
     }
   },
   "config": {}

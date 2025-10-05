@@ -12,11 +12,7 @@
       "type": "text"
     },
     "Video": {
-      "type": "media",
-      "multiple": true,
-      "allowedTypes": [
-        "videos"
-      ]
+      "type": "string"
     }
   },
   "config": {}

@@ -325,7 +325,7 @@ export interface ComponentsVideoSection extends Struct.ComponentSchema {
   attributes: {
     Description: Schema.Attribute.Text;
     Title: Schema.Attribute.String;
-    Video: Schema.Attribute.Media<'videos', true>;
+    Video: Schema.Attribute.String;
   };
 }
 

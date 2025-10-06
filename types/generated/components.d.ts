@@ -67,7 +67,7 @@ export interface ComponentsCardsWithVideoSection
     cardsAdvantages: Schema.Attribute.Component<'components.cards-list', false>;
     Description: Schema.Attribute.Text;
     Title: Schema.Attribute.String;
-    Video: Schema.Attribute.Media<'videos', true>;
+    Video: Schema.Attribute.String;
   };
 }
 

@@ -14,7 +14,7 @@
     "HeroBanner": {
       "type": "component",
       "component": "components.hero-banner",
-      "repeatable": true
+      "repeatable": false
     },
     "valuesSection": {
       "type": "component",

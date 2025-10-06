@@ -128,6 +128,9 @@ export interface ComponentsFlipCard extends Struct.ComponentSchema {
     displayName: 'flipCard';
   };
   attributes: {
+    backgroundImage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
     Detail: Schema.Attribute.Text;
     Title: Schema.Attribute.String;
   };

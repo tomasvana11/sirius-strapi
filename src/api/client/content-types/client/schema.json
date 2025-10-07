@@ -24,7 +24,7 @@
     "ClientTimeline": {
       "type": "component",
       "component": "components.timeline-box",
-      "repeatable": true
+      "repeatable": false
     },
     "ClaimSection": {
       "type": "component",

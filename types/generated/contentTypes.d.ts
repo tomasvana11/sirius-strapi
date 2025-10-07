@@ -601,7 +601,10 @@ export interface ApiClientClient extends Struct.SingleTypeSchema {
   };
   attributes: {
     ClaimSection: Schema.Attribute.Component<'components.claim-section', false>;
-    ClientTimeline: Schema.Attribute.Component<'components.timeline-box', true>;
+    ClientTimeline: Schema.Attribute.Component<
+      'components.timeline-box',
+      false
+    >;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

@@ -15,6 +15,21 @@
       "type": "component",
       "component": "components.timeline-item",
       "repeatable": true
+    },
+    "backgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "sideLabel": {
+      "type": "component",
+      "component": "components.timeline-label",
+      "repeatable": true
     }
   },
   "config": {}

@@ -1,15 +1,12 @@
 {
-  "collectionName": "components_components_timeline_items",
+  "collectionName": "components_components_timeline_labels",
   "info": {
-    "displayName": "timelineItem"
+    "displayName": "timelineLabel"
   },
   "options": {},
   "attributes": {
-    "Title": {
+    "Text": {
       "type": "string"
-    },
-    "Description": {
-      "type": "text"
     },
     "Icon": {
       "type": "enumeration",

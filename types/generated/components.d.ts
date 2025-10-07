@@ -357,7 +357,11 @@ export interface ComponentsTimelineBox extends Struct.ComponentSchema {
     displayName: 'timelineBox';
   };
   attributes: {
+    backgroundImage: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios'
+    >;
     Description: Schema.Attribute.Text;
+    sideLabel: Schema.Attribute.Component<'components.timeline-label', true>;
     TimelineItem: Schema.Attribute.Component<'components.timeline-item', true>;
     Title: Schema.Attribute.String;
   };
@@ -370,9 +374,19 @@ export interface ComponentsTimelineItem extends Struct.ComponentSchema {
   };
   attributes: {
     Description: Schema.Attribute.Text;
-    Icons: Schema.Attribute.Component<'components.icons', false>;
-    Label: Schema.Attribute.String;
+    Icon: Schema.Attribute.Enumeration<['arrow', 'rocket', 'shield']>;
     Title: Schema.Attribute.String;
+  };
+}
+
+export interface ComponentsTimelineLabel extends Struct.ComponentSchema {
+  collectionName: 'components_components_timeline_labels';
+  info: {
+    displayName: 'timelineLabel';
+  };
+  attributes: {
+    Icon: Schema.Attribute.Enumeration<['arrow', 'rocket', 'shield']>;
+    Text: Schema.Attribute.String;
   };
 }
 
@@ -433,6 +447,7 @@ declare module '@strapi/strapi' {
       'components.text-page': ComponentsTextPage;
       'components.timeline-box': ComponentsTimelineBox;
       'components.timeline-item': ComponentsTimelineItem;
+      'components.timeline-label': ComponentsTimelineLabel;
       'components.values-section': ComponentsValuesSection;
       'components.video-section': ComponentsVideoSection;
     }

@@ -34,7 +34,7 @@
     "reasonCards": {
       "type": "component",
       "component": "components.reason-cards",
-      "repeatable": false
+      "repeatable": true
     },
     "MissionClaim": {
       "type": "component",

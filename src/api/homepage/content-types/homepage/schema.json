@@ -26,6 +26,16 @@
       "component": "components.app-advantages",
       "repeatable": false
     },
+    "appBlock": {
+      "type": "component",
+      "component": "components.app-block",
+      "repeatable": false
+    },
+    "reasonCards": {
+      "type": "component",
+      "component": "components.reason-cards",
+      "repeatable": false
+    },
     "MissionClaim": {
       "type": "component",
       "component": "components.claim-section",

@@ -12,20 +12,11 @@
       "type": "media",
       "multiple": false,
       "allowedTypes": [
-        "images"
+        "images",
+        "videos",
+        "audios",
+        "files"
       ]
-    },
-    "appBlock": {
-      "type": "component",
-      "component": "components.app-block",
-      "repeatable": false
-    },
-    "reasons": {
-      "type": "component",
-      "component": "components.reason-cards",
-      "repeatable": true,
-      "min": 2,
-      "max": 2
     }
   },
   "config": {}

@@ -6,16 +6,9 @@ export interface ComponentsAppAdvantages extends Struct.ComponentSchema {
     displayName: 'appAdvantages';
   };
   attributes: {
-    appBlock: Schema.Attribute.Component<'components.app-block', false>;
-    personImage: Schema.Attribute.Media<'images'>;
-    reasons: Schema.Attribute.Component<'components.reason-cards', true> &
-      Schema.Attribute.SetMinMax<
-        {
-          max: 2;
-          min: 2;
-        },
-        number
-      >;
+    personImage: Schema.Attribute.Media<
+      'images' | 'videos' | 'audios' | 'files'
+    >;
     Title: Schema.Attribute.String;
   };
 }

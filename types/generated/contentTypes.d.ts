@@ -717,6 +717,7 @@ export interface ApiHomepageHomepage extends Struct.SingleTypeSchema {
       'components.app-advantages',
       false
     >;
+    appBlock: Schema.Attribute.Component<'components.app-block', false>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -731,6 +732,7 @@ export interface ApiHomepageHomepage extends Struct.SingleTypeSchema {
     MissionClaim: Schema.Attribute.Component<'components.claim-section', false>;
     Numbers: Schema.Attribute.Component<'components.numbers-section', false>;
     publishedAt: Schema.Attribute.DateTime;
+    reasonCards: Schema.Attribute.Component<'components.reason-cards', false>;
     Steps: Schema.Attribute.Component<'components.steps-box', false>;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &

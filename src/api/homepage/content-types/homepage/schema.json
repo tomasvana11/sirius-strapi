@@ -40,11 +40,6 @@
       "type": "component",
       "component": "components.steps-box",
       "repeatable": false
-    },
-    "Checks": {
-      "type": "component",
-      "component": "components.checks",
-      "repeatable": false
     }
   }
 }

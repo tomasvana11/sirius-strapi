@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_components_app_blocks",
+  "info": {
+    "displayName": "appBlock"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "appScreenshot": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "appFeatures": {
+      "type": "component",
+      "component": "components.app-features",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

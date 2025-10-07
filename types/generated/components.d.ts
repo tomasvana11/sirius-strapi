@@ -6,8 +6,42 @@ export interface ComponentsAppAdvantages extends Struct.ComponentSchema {
     displayName: 'appAdvantages';
   };
   attributes: {
-    Description: Schema.Attribute.Text;
+    appBlock: Schema.Attribute.Component<'components.app-block', false>;
+    personImage: Schema.Attribute.Media<'images'>;
+    reasons: Schema.Attribute.Component<'components.reason-cards', true> &
+      Schema.Attribute.SetMinMax<
+        {
+          max: 2;
+          min: 2;
+        },
+        number
+      >;
     Title: Schema.Attribute.String;
+  };
+}
+
+export interface ComponentsAppBlock extends Struct.ComponentSchema {
+  collectionName: 'components_components_app_blocks';
+  info: {
+    displayName: 'appBlock';
+  };
+  attributes: {
+    appFeatures: Schema.Attribute.Component<'components.app-features', true>;
+    appScreenshot: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    Title: Schema.Attribute.String;
+  };
+}
+
+export interface ComponentsAppFeatures extends Struct.ComponentSchema {
+  collectionName: 'components_components_app_features';
+  info: {
+    displayName: 'appFeatures';
+  };
+  attributes: {
+    appFeature: Schema.Attribute.String;
   };
 }
 
@@ -250,6 +284,18 @@ export interface ComponentsQuestion extends Struct.ComponentSchema {
   };
 }
 
+export interface ComponentsReasonCards extends Struct.ComponentSchema {
+  collectionName: 'components_components_reason_cards';
+  info: {
+    displayName: 'reasonCards';
+  };
+  attributes: {
+    Description: Schema.Attribute.Text;
+    icon: Schema.Attribute.Component<'components.icons', false>;
+    Title: Schema.Attribute.String;
+  };
+}
+
 export interface ComponentsServicesSesction extends Struct.ComponentSchema {
   collectionName: 'components_components_services_sesctions';
   info: {
@@ -364,6 +410,8 @@ declare module '@strapi/strapi' {
   export module Public {
     export interface ComponentSchemas {
       'components.app-advantages': ComponentsAppAdvantages;
+      'components.app-block': ComponentsAppBlock;
+      'components.app-features': ComponentsAppFeatures;
       'components.button': ComponentsButton;
       'components.card-with-icon': ComponentsCardWithIcon;
       'components.cards-list': ComponentsCardsList;
@@ -384,6 +432,7 @@ declare module '@strapi/strapi' {
       'components.numbers-section': ComponentsNumbersSection;
       'components.qa-section': ComponentsQaSection;
       'components.question': ComponentsQuestion;
+      'components.reason-cards': ComponentsReasonCards;
       'components.services-sesction': ComponentsServicesSesction;
       'components.social-media-link': ComponentsSocialMediaLink;
       'components.step': ComponentsStep;

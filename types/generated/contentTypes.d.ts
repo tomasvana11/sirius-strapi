@@ -717,7 +717,6 @@ export interface ApiHomepageHomepage extends Struct.SingleTypeSchema {
       'components.app-advantages',
       false
     >;
-    Checks: Schema.Attribute.Component<'components.checks', false>;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_components_app_features",
+  "info": {
+    "displayName": "appFeatures"
+  },
+  "options": {},
+  "attributes": {
+    "appFeature": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

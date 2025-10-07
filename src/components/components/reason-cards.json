@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_components_reason_cards",
+  "info": {
+    "displayName": "reasonCards"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "component",
+      "component": "components.icons",
+      "repeatable": false
+    },
+    "Description": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

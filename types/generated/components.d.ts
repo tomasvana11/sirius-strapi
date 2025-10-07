@@ -114,12 +114,26 @@ export interface ComponentsCompanyInfo extends Struct.ComponentSchema {
   };
 }
 
+export interface ComponentsFact extends Struct.ComponentSchema {
+  collectionName: 'components_components_facts';
+  info: {
+    displayName: 'fact';
+  };
+  attributes: {
+    mainText: Schema.Attribute.String;
+    textAfter: Schema.Attribute.String;
+    textBefore: Schema.Attribute.String;
+  };
+}
+
 export interface ComponentsFactsSection extends Struct.ComponentSchema {
   collectionName: 'components_components_facts_sections';
   info: {
     displayName: 'factsSection';
   };
-  attributes: {};
+  attributes: {
+    fact: Schema.Attribute.Component<'components.fact', true>;
+  };
 }
 
 export interface ComponentsFlipCard extends Struct.ComponentSchema {
@@ -280,6 +294,8 @@ export interface ComponentsStepsBox extends Struct.ComponentSchema {
     displayName: 'stepsBox';
   };
   attributes: {
+    additionalDescription: Schema.Attribute.String;
+    button: Schema.Attribute.Component<'components.button', false>;
     Step: Schema.Attribute.Component<'components.step', true>;
     Title: Schema.Attribute.String;
   };
@@ -356,6 +372,7 @@ declare module '@strapi/strapi' {
       'components.checks-item': ComponentsChecksItem;
       'components.claim-section': ComponentsClaimSection;
       'components.company-info': ComponentsCompanyInfo;
+      'components.fact': ComponentsFact;
       'components.facts-section': ComponentsFactsSection;
       'components.flip-card': ComponentsFlipCard;
       'components.hero-banner': ComponentsHeroBanner;

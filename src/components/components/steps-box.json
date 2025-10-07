@@ -12,6 +12,14 @@
       "type": "component",
       "component": "components.step",
       "repeatable": true
+    },
+    "additionalDescription": {
+      "type": "string"
+    },
+    "button": {
+      "type": "component",
+      "component": "components.button",
+      "repeatable": false
     }
   },
   "config": {}

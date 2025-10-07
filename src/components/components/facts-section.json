@@ -4,6 +4,12 @@
     "displayName": "factsSection"
   },
   "options": {},
-  "attributes": {},
+  "attributes": {
+    "fact": {
+      "type": "component",
+      "component": "components.fact",
+      "repeatable": true
+    }
+  },
   "config": {}
 }

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_components_facts",
+  "info": {
+    "displayName": "fact"
+  },
+  "options": {},
+  "attributes": {
+    "textBefore": {
+      "type": "string"
+    },
+    "mainText": {
+      "type": "string"
+    },
+    "textAfter": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

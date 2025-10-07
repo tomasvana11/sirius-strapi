@@ -294,7 +294,7 @@ export interface ComponentsStepsBox extends Struct.ComponentSchema {
     displayName: 'stepsBox';
   };
   attributes: {
-    additionalDescription: Schema.Attribute.String;
+    additionalDescription: Schema.Attribute.Blocks;
     button: Schema.Attribute.Component<'components.button', false>;
     Step: Schema.Attribute.Component<'components.step', true>;
     Title: Schema.Attribute.String;

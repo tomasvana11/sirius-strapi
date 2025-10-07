@@ -14,7 +14,7 @@
       "repeatable": true
     },
     "additionalDescription": {
-      "type": "string"
+      "type": "blocks"
     },
     "button": {
       "type": "component",
